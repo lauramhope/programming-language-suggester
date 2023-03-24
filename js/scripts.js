@@ -10,8 +10,8 @@ function hideResults () {
 
 function handleRadio(event) {
   event.preventDefault();
-  const radioBev = document.querySelector("input[name='bev']:checked");
-  const radioVacation = document.querySelector("input[name='vacation']:checked");
+  const radioBev = document.querySelector("input[name='bev']:checked").value;
+  const radioVacation = document.querySelector("input[name='vacation']:checked").value;
   const radioFlavor = document.querySelector("input[name='flavor']:checked");
   const radioPet = document.querySelector("input[name='pet']:checked");
   const radioColor = document.querySelector("input[name='color']:checked");
@@ -35,7 +35,6 @@ function handleRadio(event) {
   } else {
     result = document.getElementById("rust").removeAttribute("class");
   }
-  console.log(result, radioBev, radioColor, radioFlavor, radioVacation, radioPet);
   
   let resetBtn = document.getElementById("reset");
   resetBtn.addEventListener("click", function() {
