@@ -1,3 +1,46 @@
 .hidden {
   display: none;
 }
+
+img {
+  width: 25%;
+  border-radius: 80%;
+  margin-left: auto;
+  margin-right: auto; 
+  text-align: center; 
+
+}
+
+h1 {
+  text-align: center;
+  background-color:rgb(38, 236, 236)
+}
+
+#intro {
+  text-align: center; 
+  font-size: x-large;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: #7af8ce;
+  margin: auto;
+  padding-left: 15px;
+}
+
+#generate {
+  border-width: 10px;
+  border: solid black; 
+  margin-top: 10px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: rgb(248, 248, 250);  
+}
+
+#reset {
+  border-width: 10px;
+  border: solid black; 
+  margin-top: 10px; 
+  margin-bottom: 10px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: rgb(248, 248, 250); 
+}

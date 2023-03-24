@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/scripts.js"></script>
   <title>Programming Language Suggester</title>
 </head>
 <body>
-  <h1>Picking a Programming Language: 101</h1>
-  <p>Interested in coding but can't decide which language(s) to choose? Fill out the application below to let our bots generate the best fit based on a few key personality traits!</p>
+
+  <div id="intro">
+    <img src="langimg.png" alt="A picture of programming language">
+    <h1>Picking a Programming Language: 101</h1>
+    <p>Interested in coding but can't decide which language(s) to choose? Fill out the application below to let our bots generate the best fit based on a few key personality traits!</p>
+  </div>
+
 
   <h2>Please enter your name and choose <u>one</u> option for each of the following questions:</h2>
   <form id="survey">
@@ -83,10 +89,9 @@
       <input type="radio" name="color" value="purple">
       Purple
     </label><br>
-    <button type="submit" class="btn">Generate!</button><br>
-
+    <button type="submit" class="btn" id="generate">Generate!</button>
   </form>
-  <br>
+
   <button type="button" class="btn" id="reset">Reset</button> 
   <h2>Congrats <span id="firstName"></span>! Your language is...</h2>
   <p id="output"></p>
