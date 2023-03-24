@@ -35,6 +35,7 @@ function handleRadio(event) {
   } else {
     result = document.getElementById("rust").removeAttribute("class");
   }
+  console.log(result, radioBev, radioColor, radioFlavor, radioVacation, radioPet);
   
   let resetBtn = document.getElementById("reset");
   resetBtn.addEventListener("click", function() {
@@ -58,5 +59,4 @@ function handleRadio(event) {
 window.addEventListener("load", function() {
   const form = document.getElementById("survey");
   form.addEventListener("submit", handleRadio);
-  
 });
