@@ -1,3 +1,7 @@
+
+let resetBtn = document.querySelector("button#reset");
+let form = document.querySelector("form");
+
 function hideResults () {
   document.getElementById("ruby").setAttribute("class", "hidden");
   document.getElementById("javascript").setAttribute("class", "hidden");
@@ -46,4 +50,5 @@ function handleRadio(event) {
 window.addEventListener("load", function() {
   const form = document.getElementById("survey");
   form.addEventListener("submit", handleRadio);
+  
 });
