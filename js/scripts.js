@@ -36,6 +36,8 @@ function handleRadio(event) {
   } else {
     result = document.getElementById("rust").removeAttribute("class");
   }
+  console.log(radioBev, radioVacation); 
+  console.log("javascript");
   
 
   let resetBtn = document.getElementById("reset");
