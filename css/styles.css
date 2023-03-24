@@ -2,9 +2,18 @@
   display: none;
 }
 
-/* h1 {
+h1 {
   text-align: center;
   background-color:rgb(203, 236, 38)
+}
+
+img {
+  width: 28%;
+  border-radius: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 #intro {
@@ -21,7 +30,7 @@ body {
 
 #generate {
   border-width: 10px;
-  border: solid black; 
+  border: dotted black; 
   margin-top: 10px;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   background-color: rgb(248, 248, 250);  
@@ -29,9 +38,49 @@ body {
 
 #reset {
   border-width: 10px;
-  border: solid black; 
+  border: double black; 
   margin-top: 10px; 
   margin-bottom: 10px;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   background-color: rgb(248, 248, 250); 
-} */
+}
+
+label {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+#ruby {
+  background-color: pink;
+  border: dashed hotpink; 
+  padding-left: 15px; 
+}
+
+#javascript {
+  background-color: rgb(233, 132, 233); 
+  border: dotted purple; 
+  padding-left: 15px; 
+}
+
+#csharp {
+  background-color:rgb(203, 236, 38);
+  border: solid green; 
+  padding-left: 15px; 
+}
+
+#python {
+  background-color:darkorange; 
+  border: double orangered;
+  padding-left: 15px; 
+}
+
+#rust {
+  background-color:lightcoral; 
+  border: dashed darkslateblue;
+  padding-left: 15px; 
+} 
+
+#error {
+  background-color:yellow; 
+  border: solid black;
+  padding-left: 15px; 
+}
