@@ -9,13 +9,12 @@
   <h1>Picking a Programming Language: 101</h1>
   <p>Interested in coding but can't decide which language(s) to choose? Fill out the application below to let our bots generate the best fit based on a few key personality traits!</p>
 
-  <h2>Choose one option for each of the following questions:</h2>
+  <h2>Please enter your name and choose <u>one</u> option for each of the following questions:</h2>
   <form id="survey">
-    <!-- <label for="input1"></label>
-    <input id="input1" type="text">
-    <label for="input2">2nd number:</label>
-    <input id="input2" type="text"> -->
+    <label for="name">First Name:</label>
+    <input id="name" type="text">
 
+    <h3>Beverage</h3>
     <label>
       <input type="radio" name="bev" value="coffee">
       Coffee
@@ -28,15 +27,67 @@
       <input type="radio" name="bev" value="water">
       Water
     </label><br>
-    <!-- <label>
-      <input type="radio" name="bev" value="divide">
-      divide
-    </label> -->
 
-    <button type="submit" class="btn">Go!</button>
+    <h3>Vacation</h3>
+    <label>
+      <input type="radio" name="vacation" value="beach">
+      Beach
+    </label><br>
+    <label>
+      <input type="radio" name="vacation" value="mountains">
+      Mountains
+    </label><br>
+    <label>
+      <input type="radio" name="vacation" value="desert">
+      Desert
+    </label><br>
+
+    <h3>Flavor</h3>
+    <label>
+      <input type="radio" name="flavor" value="chocolate">
+      Chocolate
+    </label><br>
+    <label>
+      <input type="radio" name="flavor" value="strawberry">
+      Strawberry
+    </label><br>
+    <label>
+      <input type="radio" name="flavor" value="vanilla">
+      Vanilla
+    </label><br>
+
+    <h3>Pet</h3>
+    <label>
+      <input type="radio" name="pet" value="dog">
+      Dog
+    </label><br>
+    <label>
+      <input type="radio" name="pet" value="cat">
+      Cat
+    </label><br>
+    <label>
+      <input type="radio" name="pet" value="turtle">
+      Turtle
+    </label><br>
+
+    <h3>Color</h3>
+    <label>
+      <input type="radio" name="color" value="green">
+      Green
+    </label><br>
+    <label>
+      <input type="radio" name="color" value="blue">
+      Blue
+    </label><br>
+    <label>
+      <input type="radio" name="color" value="purple">
+      Purple
+    </label><br>
+
+    <button type="submit" class="btn">Generate!</button>
   </form>
 
-  <h2>Results</h2>
+  <h2>Congrats! Your language is...</h2>
   <p id="output"></p>
   
 </body>
