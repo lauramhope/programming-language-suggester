@@ -6,7 +6,6 @@ function hideResults () {
   document.getElementById("rust").setAttribute("class", "hidden");
 }
 
-
 function handleRadio(event) {
   event.preventDefault();
   const radioBev = document.querySelector("input[name='bev']:checked").value;
@@ -21,17 +20,19 @@ function handleRadio(event) {
   let result;
   if (radioBev === "tea" && radioVacation === "beach" && radioFlavor === "vanilla") {
     result = document.getElementById("ruby").removeAttribute("class");
-  } else if (radioBev === "coffee" && radioVacation === "mountain" && radioFlavor === "chocolate") {
+  } else if (radioBev === "coffee" && radioVacation === "mountains" && radioFlavor === "strawberry") {
     result = document.getElementById("javascript").removeAttribute("class");
   } else if (radioBev === "water" && radioVacation === "desert" && radioFlavor === "strawberry") { 
     result = document.getElementById("csharp").removeAttribute("class");
-  } else if (radioBev === "coffee" && radioVacation === "desert" && radioFlavor === "strawberry") {
+  } else if (radioBev === "coffee" && radioVacation === "desert" && radioFlavor === "chocolate") {
     result = document.getElementById("python").removeAttribute("class");
   } else {
     result = document.getElementById("rust").removeAttribute("class");
   }
 
   document.querySelector("span#firstName").innerText = firstName; 
+
+  console.log(result, firstName); 
 } 
 
 window.addEventListener("load", function() {
