@@ -44,6 +44,11 @@ function handleRadio(event) {
     document.getElementById("rust").setAttribute("class", "hidden");
     document.getElementById("firstName").value = null; 
     document.querySelector("span#firstName").innerText = null;
+    document.querySelector("input[name='bev']:checked").checked = false;
+    document.querySelector("input[name='vacation']:checked").checked = false;
+    document.querySelector("input[name='flavor']:checked").checked = false;
+    document.querySelector("input[name='pet']:checked").checked = false;
+    document.querySelector("input[name='color']:checked").checked = false;
   });
 
 } 
