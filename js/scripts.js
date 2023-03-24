@@ -1,3 +1,11 @@
+function hideResults () {
+  document.getElementById("ruby").setAttribute("class", "hidden");
+  document.getElementById("javascript").setAttribute("class", "hidden");
+  document.getElementById("csharp").setAttribute("class", "hidden");
+  document.getElementById("python").setAttribute("class", "hidden");
+  document.getElementById("rust").setAttribute("class", "hidden");
+}
+
 const firstName = document.getElementById("firstName").value;
 
 document.querySelector("span#firstName").innerText = firstName; 
@@ -12,5 +20,18 @@ function handleRadio(event) {
 
 
   let result;
-  if ()
-}
+  if (radioBev === "tea" && radioVacation === "beach" && radioFlavor === "vanilla") {
+    document.getElementById("ruby").removeAttribute("class");
+  } else if (radioBev === "coffee" && radioVacation === "mountain" && radioFlavor === "chocolate") {
+    document.getElementById("javascript").removeAttribute("class");
+  } else if (radioBev === "water" && radioVacation === "desert" && radioFlavor === "strawberry") { 
+    document.getElementById("csharp").removeAttribute("class");
+  } else if (radioBev === "coffee" && radioVacation === "desert" && radioFlavor === "strawberry") {
+    document.getElementById("python").removeAttribute("class");
+  } else {
+    document.getElementById("rust").removeAttribute("class");
+  }
+
+  hideResults();
+
+} 
