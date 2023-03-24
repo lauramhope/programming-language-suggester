@@ -5,8 +5,7 @@ function hideResults () {
   document.getElementById("javascript").setAttribute("class", "hidden");
   document.getElementById("csharp").setAttribute("class", "hidden");
   document.getElementById("python").setAttribute("class", "hidden");
-  document.getElementById("rust").setAttribute("class", "hidden");
-  document.getElementById("error").setAttribute("class", "hidden"); 
+  document.getElementById("rust").setAttribute("class", "hidden"); 
 }
 
 function handleRadio(event) {
@@ -36,10 +35,7 @@ function handleRadio(event) {
   } else {
     result = document.getElementById("rust").removeAttribute("class");
   }
-  console.log(radioBev, radioVacation); 
-  console.log("javascript");
   
-
   let resetBtn = document.getElementById("reset");
   resetBtn.addEventListener("click", function() {
     document.getElementById("ruby").setAttribute("class", "hidden");
