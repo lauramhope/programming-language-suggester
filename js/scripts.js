@@ -32,7 +32,15 @@ function handleRadio(event) {
 
   document.querySelector("span#firstName").innerText = firstName; 
 
-  console.log(result, firstName); 
+  resetBtn.addEventListener("click", function() {
+    document.getElementById("ruby").setAttribute("class", "hidden");
+    document.getElementById("javascript").setAttribute("class", "hidden");
+    document.getElementById("csharp").setAttribute("class", "hidden");
+    document.getElementById("python").setAttribute("class", "hidden");
+    document.getElementById("rust").setAttribute("class", "hidden");
+    document.getElementById("firstName").value = null; 
+  });
+
 } 
 
 window.addEventListener("load", function() {
