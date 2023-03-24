@@ -6,7 +6,7 @@ function hideResults () {
   document.getElementById("rust").setAttribute("class", "hidden");
 }
 
-const firstName = document.getElementById("firstName").value;
+
 
 document.querySelector("span#firstName").innerText = firstName; 
 
@@ -17,7 +17,7 @@ function handleRadio(event) {
   const radioFlavor = document.querySelector("input[name='flavor']").value;
   const radioPet = document.querySelector("input[name='pet']").value;
   const radioColor = document.querySelector("input[name='color']").value;
-
+  const firstName = document.getElementById("firstName").value;
 
   let result;
   if (radioBev === "tea" && radioVacation === "beach" && radioFlavor === "vanilla") {
@@ -32,6 +32,13 @@ function handleRadio(event) {
     document.getElementById("rust").removeAttribute("class");
   }
 
+  document.querySelector("span#firstName").innerText = firstName; 
+
   hideResults();
 
 } 
+
+window.addEventListener("load", function() {
+  const form = document.getElementById("survey");
+  form.addEventListener("submit", handleRadio);
+});
