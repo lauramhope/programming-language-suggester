@@ -18,13 +18,13 @@ function handleRadio(event) {
   hideResults();
 
   let result;
-  if (radioBev === "tea" && radioVacation === "beach" && radioFlavor === "vanilla") {
+  if (radioBev === "tea" && radioVacation === "beach") {
     result = document.getElementById("ruby").removeAttribute("class");
-  } else if (radioBev === "coffee" && radioVacation === "mountains" && radioFlavor === "strawberry") {
+  } else if (radioBev === "coffee" && radioVacation === "mountains") {
     result = document.getElementById("javascript").removeAttribute("class");
-  } else if (radioBev === "water" && radioVacation === "desert" && radioFlavor === "strawberry") { 
+  } else if (radioBev === "water" && radioVacation === "desert") { 
     result = document.getElementById("csharp").removeAttribute("class");
-  } else if (radioBev === "coffee" && radioVacation === "desert" && radioFlavor === "chocolate") {
+  } else if (radioBev === "coffee" && radioVacation === "desert") {
     result = document.getElementById("python").removeAttribute("class");
   } else {
     result = document.getElementById("rust").removeAttribute("class");
