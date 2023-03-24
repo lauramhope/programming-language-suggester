@@ -1,5 +1,5 @@
 
-let resetBtn = document.querySelector("button#reset");
+
 let form = document.querySelector("form");
 
 function hideResults () {
@@ -20,6 +20,7 @@ function handleRadio(event) {
   const firstName = document.getElementById("firstName").value;
 
   hideResults();
+  document.querySelector("span#firstName").innerText = firstName; 
 
   let result;
   if (radioBev === "tea" && radioVacation === "beach") {
@@ -34,8 +35,7 @@ function handleRadio(event) {
     result = document.getElementById("rust").removeAttribute("class");
   }
 
-  document.querySelector("span#firstName").innerText = firstName; 
-
+  let resetBtn = document.getElementById("reset");
   resetBtn.addEventListener("click", function() {
     document.getElementById("ruby").setAttribute("class", "hidden");
     document.getElementById("javascript").setAttribute("class", "hidden");
@@ -43,6 +43,7 @@ function handleRadio(event) {
     document.getElementById("python").setAttribute("class", "hidden");
     document.getElementById("rust").setAttribute("class", "hidden");
     document.getElementById("firstName").value = null; 
+    document.querySelector("span#firstName").innerText = null;
   });
 
 } 
