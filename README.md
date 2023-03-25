@@ -21,6 +21,8 @@ _This HTML document showcases beginner-level JavaScript skills demonstrating bra
 * _Open the directory titled "programming-language-suggester" on your desktop_
 * _Open the file "index.html" into your web browser_
 
+[GH-Pages Link](https://lauramhope.github.io/programming-language-suggester/)
+
 ## Known Bugs
 
 * _No known bugs as of 3/24/23_
