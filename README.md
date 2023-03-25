@@ -23,9 +23,10 @@ _This HTML document showcases beginner-level JavaScript skills demonstrating bra
 
 [GH-Pages Link](https://lauramhope.github.io/programming-language-suggester/)
 
-## Known Bugs
+## Known Bugs (as of 3/24/23)
 
-* _No known bugs as of 3/24/23_
+* _Will only reset buttons if all are selected_
+* _Will only generate "error" message if both beverage and vacation radio button options have been selected_
 
 ## License
 
