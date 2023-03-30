@@ -16,7 +16,7 @@
 
   <form id="survey">
     <label for="firstName">First Name:</label>
-    <input id="firstName" type="text">
+    <input id="firstName" type="text" required>
 
     <h3>Beverage</h3>
     <label>
@@ -90,12 +90,10 @@
     <button type="submit" class="btn" id="generate">Generate!</button>
   </form>
 
-  <!-- <button type="button" class="btn" id="reset">Reset</button>  -->
-
   <form>
     <button class="restart-btn">Restart</button>
   </form>
-  
+
   <h2>Congrats <span id="nameDisplay"></span>! Your language is...</h2>
   <p id="output"></p>
 
@@ -123,10 +121,6 @@
     <h2>Rust!</h2>
     <h3>Well, you're a bit of a harder coder to crack. Your combination of personality traits is as wild and unpredictable as it gets. Luckily, Rust is for the wild and unpredictable sort.</h3>
   </div>
-
-  <!-- <div id="error" class="hidden">
-    <h2>Please selection an option from each of the boxes before submitting!</h2>
-  </div> -->
   
 </body>
 </html>

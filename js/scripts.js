@@ -26,7 +26,6 @@ function handleRadio(event) {
   } else {
     document.getElementById("rust").removeAttribute("class");
   }
-  
 } 
 
 window.addEventListener("load", function() {

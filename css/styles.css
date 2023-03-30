@@ -36,15 +36,6 @@ body {
   background-color: rgb(248, 248, 250);  
 }
 
-#reset {
-  border-width: 10px;
-  border: double black; 
-  margin-top: 10px; 
-  margin-bottom: 10px;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  background-color: rgb(248, 248, 250); 
-}
-
 label {
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
@@ -78,9 +69,3 @@ label {
   border: dashed darkslateblue;
   padding-left: 15px; 
 } 
-
-#error {
-  background-color:yellow; 
-  border: solid black;
-  padding-left: 15px; 
-}
