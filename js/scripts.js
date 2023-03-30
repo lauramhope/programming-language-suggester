@@ -14,10 +14,9 @@ function handleRadio(event) {
   const radioPet = document.querySelector("input[name='pet']:checked");
   const radioColor = document.querySelector("input[name='color']:checked");
   const firstName = document.getElementById("firstName").value;
-  // const error = document.getElementById("error").value;
 
   hideResults();
-  document.querySelector("span#firstName").innerText = firstName; 
+  document.querySelector("span#nameDisplay").innerText = firstName; 
 
   if (radioBev === "tea" && radioVacation === "beach") {
     document.getElementById("ruby").removeAttribute("class");
@@ -42,7 +41,7 @@ function handleRadio(event) {
     document.getElementById("rust").setAttribute("class", "hidden");
     document.getElementById("error").setAttribute("class", "hidden");
     document.getElementById("firstName").value = null; 
-    document.querySelector("span#firstName").innerText = null;
+    document.querySelector("span#nameDisplay").innerText = null;
     document.querySelector("input[name='bev']:checked").checked = false;
     document.querySelector("input[name='vacation']:checked").checked = false;
     document.querySelector("input[name='flavor']:checked").checked = false;
