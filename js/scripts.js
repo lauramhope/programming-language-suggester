@@ -1,5 +1,3 @@
-let form = document.querySelector("form");
-
 function hideResults () {
   document.getElementById("ruby").setAttribute("class", "hidden");
   document.getElementById("javascript").setAttribute("class", "hidden");
@@ -16,24 +14,23 @@ function handleRadio(event) {
   const radioPet = document.querySelector("input[name='pet']:checked");
   const radioColor = document.querySelector("input[name='color']:checked");
   const firstName = document.getElementById("firstName").value;
-  const error = document.getElementById("error").value;
+  // const error = document.getElementById("error").value;
 
   hideResults();
   document.querySelector("span#firstName").innerText = firstName; 
 
-  let result;
   if (radioBev === "tea" && radioVacation === "beach") {
-    result = document.getElementById("ruby").removeAttribute("class");
+    document.getElementById("ruby").removeAttribute("class");
   } else if (radioBev === "coffee" && radioVacation === "mountains") {
-    result = document.getElementById("javascript").removeAttribute("class");
+    document.getElementById("javascript").removeAttribute("class");
   } else if (radioBev === "water" && radioVacation === "desert") { 
-    result = document.getElementById("csharp").removeAttribute("class");
+    document.getElementById("csharp").removeAttribute("class");
   } else if (radioBev === "coffee" && radioVacation === "desert") {
-    result = document.getElementById("python").removeAttribute("class");
+    document.getElementById("python").removeAttribute("class");
   } else if (!radioBev || !radioVacation || !radioFlavor || !radioColor || !radioPet) {
-    result = document.getElementById("error").removeAttribute("class");
+    document.getElementById("error").removeAttribute("class");
   } else {
-    result = document.getElementById("rust").removeAttribute("class");
+    document.getElementById("rust").removeAttribute("class");
   }
   
   let resetBtn = document.getElementById("reset");
